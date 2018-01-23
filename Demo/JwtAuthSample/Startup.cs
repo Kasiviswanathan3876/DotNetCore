@@ -37,12 +37,28 @@ namespace JwtAuthSample
             })
             .AddJwtBearer(o =>
             {
-                o.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                //o.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                //{
+                //    ValidIssuer = jwtSettings.Issuer,
+                //    ValidAudience = jwtSettings.Audience,
+                //    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
+                //};
+                o.SecurityTokenValidators.Clear();
+                o.SecurityTokenValidators.Add(new MyTokenValidator());
+
+                o.Events = new JwtBearerEvents()
                 {
-                    ValidIssuer = jwtSettings.Issuer,
-                    ValidAudience = jwtSettings.Audience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
+                    OnMessageReceived = context =>
+                    {
+                        var token = context.Request.Headers["mytoken"];
+                        context.Token = token.FirstOrDefault();
+                        return Task.CompletedTask;
+                    }
                 };
+            });
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("SuperAdminOnly", policy => policy.RequireClaim("SuperAdminOnly"));
             });
             services.AddMvc();
         }

@@ -33,7 +33,8 @@ namespace JwtAuthSample.Controllers
                     return BadRequest();
                 var claims = new Claim[] {
                     new Claim(ClaimTypes.Name,"no8"),
-                    new Claim(ClaimTypes.Role,"admin")
+                    new Claim(ClaimTypes.Role,"user"),
+                    new Claim("SuperAdminOnly","true")
                 };
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
