@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPIExample", "WebAPIExam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExample", "ConsoleExample\ConsoleExample.csproj", "{6C5670D5-F332-49C9-8CC0-D3E4C2C6F8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuthSample", "JwtAuthSample\JwtAuthSample.csproj", "{53C4F364-BB97-4D22-8B03-CB59445C76A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthSample", "JwtAuthSample\JwtAuthSample.csproj", "{53C4F364-BB97-4D22-8B03-CB59445C76A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerCenter", "IdentityServerCenter\IdentityServerCenter.csproj", "{559E1B43-4689-4F72-A93F-A2DBD275B953}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{53C4F364-BB97-4D22-8B03-CB59445C76A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53C4F364-BB97-4D22-8B03-CB59445C76A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53C4F364-BB97-4D22-8B03-CB59445C76A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559E1B43-4689-4F72-A93F-A2DBD275B953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559E1B43-4689-4F72-A93F-A2DBD275B953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559E1B43-4689-4F72-A93F-A2DBD275B953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559E1B43-4689-4F72-A93F-A2DBD275B953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
