@@ -9,14 +9,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 namespace JwtAuthSample.Controllers
 {
     [Authorize(Policy = "SuperAdminOnly")]
+    //[Authorize(Roles ="user")]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return User.Claims.Select(c => c.Type + " " + c.Value).ToList();
         }
 
         // GET api/values/5
