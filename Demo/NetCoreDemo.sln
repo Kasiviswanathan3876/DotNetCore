@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcCookieAuthSample", "MvcCookieAuthSample\MvcCookieAuthSample.csproj", "{89073391-48C8-49E7-82F5-0B23F3108874}"
 EndProject
@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identityserver4", "identity
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientCredentialApi", "ClientCredentialApi\ClientCredentialApi.csproj", "{4F49B63B-3390-4FEF-A3AA-5F1E0FC5CF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPartyDemo", "ThirdPartyDemo\ThirdPartyDemo.csproj", "{8612A151-5777-4FC1-968A-52FB7477EBA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdPartyDemo", "ThirdPartyDemo\ThirdPartyDemo.csproj", "{8612A151-5777-4FC1-968A-52FB7477EBA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwdClient", "PwdClient\PwdClient.csproj", "{318DAAC0-659A-404B-8C9E-F6874208B13A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{8612A151-5777-4FC1-968A-52FB7477EBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8612A151-5777-4FC1-968A-52FB7477EBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8612A151-5777-4FC1-968A-52FB7477EBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318DAAC0-659A-404B-8C9E-F6874208B13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318DAAC0-659A-404B-8C9E-F6874208B13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318DAAC0-659A-404B-8C9E-F6874208B13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318DAAC0-659A-404B-8C9E-F6874208B13A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{559E1B43-4689-4F72-A93F-A2DBD275B953} = {183E058C-042B-4836-952D-A4ABC5BB4E7A}
 		{4F49B63B-3390-4FEF-A3AA-5F1E0FC5CF6B} = {183E058C-042B-4836-952D-A4ABC5BB4E7A}
 		{8612A151-5777-4FC1-968A-52FB7477EBA4} = {183E058C-042B-4836-952D-A4ABC5BB4E7A}
+		{318DAAC0-659A-404B-8C9E-F6874208B13A} = {183E058C-042B-4836-952D-A4ABC5BB4E7A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {344E7D68-E565-4012-B2C7-5C609D0F704F}
